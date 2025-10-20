@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #bbc6fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quote-box{
+    background: #fff;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.quote-box{
+    font-size: 30px;
+}
+
+.quote-box blockquote{
+    font-size: 25px;
+    min-height: 10px;
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after{
+    content:'"';
+}
+
+.quote-box span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+    font-size: 25px;
+}
+
+.quote-box span::before{
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: rgb(23,124,229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.quote-box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-box button{
+    background: rgb(23,124,229);
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid rgb(23,124,229);
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
