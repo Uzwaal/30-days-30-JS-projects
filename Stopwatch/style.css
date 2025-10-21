@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(187, 167, 167);
+    
+}
+
+.container{
+    width: 400px;
+    height: 200px;
+    background-color: #282c34;
+    border-radius: 10px;
+}
+
+.container h1{
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap:20px;
+}
+.buttons button{
+    padding:5px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    border:none;
+    cursor:pointer;
+}
+
+
