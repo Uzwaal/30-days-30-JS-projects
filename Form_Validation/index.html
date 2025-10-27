@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Validation</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -12,22 +13,27 @@
 
             <div class="input-group">
                 <label>Full Name</label>
-                <input type="text" placeholder="Enter your name">
+                <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                <span id="name-error"></span>
             </div>
             <div class="input-group">
                 <label>Phone No.</label>
-                <input type="tel" placeholder="Enter your contact number">
+                <input type="tel" placeholder="Enter your contact number" id="contact-phone" onkeyup="validatePhone()">
+                <span id="Phone-error"></span>
             </div>
             <div class="input-group">
                 <label>Email id</label>
-                <input type="email" placeholder="Enter your email">
+                <input type="email" placeholder="Enter your email" id="contact-email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
             </div>
             <div class="input-group">
                 <label>Your Message</label>
-                <textarea rows="5" placeholder="Enter your message"></textarea>
+                <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                <span id="message-error"></span>
             </div>
 
-            <button>submit</button>
+            <button onclick="return validateForm()">submit</button>
+            <span id="submit-error"></span>
 
         </form>
     </div>
