@@ -36,7 +36,7 @@ body{
     height: 105px;
     position: absolute;
     bottom: 0;
-    left: 45vw;
+    left: 100vw;
 }
 
 .animateDino{
@@ -48,6 +48,9 @@ body{
     animation:obstacleAni 5s linear infinite;
 }
 
+.gameOver{
+    visibility: hidden;
+}
 @keyframes dino{
     0%{
         bottom: 0;
